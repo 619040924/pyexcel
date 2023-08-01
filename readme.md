@@ -33,8 +33,7 @@
 
 一是确实要从版本库中删除该文件，那就用命令 `git rm`删掉，并且 `git commit`
 
-先手动删除文件，然后使用`git rm `和git add `file>`效果是一样的。
-
+先手动删除文件，然后使用 `git rm `和git add `file>`效果是一样的。
 
 另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本
 
@@ -42,9 +41,7 @@
 
 注意：从来没有被添加到版本库就被删除的文件，是无法恢复的！
 
-
 9、远程仓库github
-
 
 ```
 git init
@@ -54,7 +51,6 @@ git branch -M main
 git remote add origin git@github.com:619040924/pyexcel.git
 git push -u origin main
 ```
-
 
 要关联一个远程库，使用命令 `git remote add origin git@server-name:path/repo-name.git`；
 
@@ -66,18 +62,15 @@ git push -u origin main
 
 分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步
 
-
 ## 10、删除远程库
 
 如果添加的时候地址写错了，或者就是想删除远程库，可以用 `git remote rm <name>`命令。使用前，建议先用 `git remote -v`查看远程库信息
-
 
 ## 11、克隆远程仓库
 
 要克隆一个仓库，首先必须知道仓库的地址，然后使用 `git clone`命令克隆。
 
 ## 12、创建与分支合并
-
 
 一开始的时候，`master`分支是一条线，Git用 `master`指向最新的提交，再用 `HEAD`指向 `master`，就能确定当前分支，以及当前分支的提交点：
 
@@ -177,14 +170,13 @@ git push -u origin main
 └───┘    └───┘    └───┘    └───┘
 ```
 
-
 Git鼓励大量使用分支：
 
 查看分支：`git branch`
 
 创建分支：`git branch <name>`
 
-切换分支：`git checkout <name>`或者 `git switch <name>`
+切换分支：`git checkout <name>`或者 `git switch <name> 切换分支这个动作，用   git  switch` `更科学`
 
 创建+切换分支：`git checkout -b <name>`或者 `git switch -c <name>`
 
@@ -197,10 +189,6 @@ $ git branch dev
 $ git checkout dev
 ```
 
-
-合并某分支到当前分支：`git merge <name>`
+合并某分支到当前分支：`git merge <name>  git merge命令用于合并指定分支到当前分支。`
 
 删除分支：`git branch -d <name>`
-
-
-another test
