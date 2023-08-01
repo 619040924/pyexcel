@@ -188,6 +188,19 @@ Git鼓励大量使用分支：
 
 创建+切换分支：`git checkout -b <name>`或者 `git switch -c <name>`
 
+注意：
+
+`git checkout`命令加上 `-b`参数表示创建并切换，相当于以下两条命令：
+
+```
+$ git branch dev
+$ git checkout dev
+```
+
+
 合并某分支到当前分支：`git merge <name>`
 
 删除分支：`git branch -d <name>`
+
+
+another test
