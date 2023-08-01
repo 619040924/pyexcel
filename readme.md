@@ -194,4 +194,10 @@ $ git checkout dev
 删除分支：`git branch -d <name>`
 
 
+<<<<<<< HEAD
 13、主支与分支冲突
+=======
+## 13、解决冲突
+
+分支冲突
+>>>>>>> feature1
