@@ -31,7 +31,6 @@
 git reset --hard 1094a
 ```
 
-
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考[版本回退](https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192)一节，不过前提是没有推送到远程库。
 
 ## 8、删除文件
@@ -210,8 +209,6 @@ $ git checkout dev
 
 ## 14、分支策略
 
-
-
 在实际开发中，我们应该按照几个基本原则进行分支管理：
 
 首先，`master`分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
@@ -228,15 +225,10 @@ $ git checkout dev
 
 ## 15、创建标签
 
-
 * 命令 `git tag <tagname>`用于新建一个标签，默认为 `HEAD`，也可以指定一个commit id；
 * 命令 `git tag -a <tagname> -m "blablabla..."`可以指定标签信息；
 * 命令 `git tag`可以查看所有标签。
-
-
 * 命令 `git push origin <tagname>`可以推送一个本地标签；
 * 命令 `git push origin --tags`可以推送全部未推送过的本地标签；
 * 命令 `git tag -d <tagname>`可以删除一个本地标签；
 * 命令 `git push origin :refs/tags/<tagname>`可以删除一个远程标签。
-
-测试标签回滚
