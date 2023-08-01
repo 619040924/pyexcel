@@ -192,3 +192,6 @@ $ git checkout dev
 合并某分支到当前分支：`git merge <name>  git merge命令用于合并指定分支到当前分支。`
 
 删除分支：`git branch -d <name>`
+
+
+13、主支与分支冲突
